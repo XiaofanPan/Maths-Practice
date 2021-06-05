@@ -1,10 +1,9 @@
-var url = 
+var url = "https://github.com/XiaofanPan/Maths-Practice/blob/main/%E6%8E%A7%E5%88%B6.html"
 function createXmlHttp() {
     if (window.XMLHttpRequest) {
     xmlHttp = new XMLHttpRequest();
     } else {
     xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
-    }
     }
     function getSource() {
     createXmlHttp();
@@ -12,8 +11,7 @@ function createXmlHttp() {
     xmlHttp.open("GET", url, true);
     xmlHttp.send(null);
     }
-    function writeSource() {
-    if (xmlHttp.readyState == 4) {
-    document.getElementById("source").value = xmlHttp.responseText;
+    function getSecond() {
+    document.getElementById("w").innerHTML = xmlHttp.responseText
     }
     }
