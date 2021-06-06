@@ -19,12 +19,15 @@ h4 {
 p {
     font-size: 16px;
 }
+#test {
+    display: none;
+}
+#buttonSA {
+    display: none;
+}
 #wantAnswer {
     display: none;
 }
 #answer {
-    display: none;
-}
-#test {
     display: none;
 }

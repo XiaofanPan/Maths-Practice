@@ -9,12 +9,12 @@ function proveOpenTest()
     else
     {
         document.getElementById("test").style.display = "block";
+        document.getElementById("buttonSA").style.display = "block";
     }
 }
-//POT是proveOpenTest的缩写
 function showAnswer()
 {
-    document.getElementById("wantAnswer").style.display = "block";
+    document.getElementById("wantAnswer").style.display="block";
 }
 function proveShowAnswer()
 {
@@ -29,4 +29,3 @@ function proveShowAnswer()
         document.getElementById("answer").style.display = "block";
     }
 }
-//PSA是proveShowAnswer的缩写
