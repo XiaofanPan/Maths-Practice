@@ -66,26 +66,33 @@
         <p id="w"></p>
 
         <h3>练习</h3>
-        <p>1.直接写出得数．</p>
-        <form>
-            \(2+(-5)=\)<input type="text" class="yourAnswer">
-            <br>
-            \((-3)+(-7)=\)<input type="text" class="yourAnswer">
-            <br>
-            \((-\cfrac{2}{3})-3=\)<input type="text" class="yourAnswer">
-            <br>
-            \((-0.5)-(-0.5)=\)<input type="text" class="yourAnswer">
-            <br>
-            \(3\times(-\cfrac{3}{7})=\)<input type="text" class="yourAnswer">
-            <br>
-            \((-\cfrac{2}{7})\div(-\cfrac{5}{4})=\)<input type="text" class="yourAnswer">
-            <br>
-            <button onclick="submit()">提交</button>
-            <button onclick="showAnswer()">查看答案</button>
-            <form id="wantAnswer">
-                请输入查看答案的密码：<input type="text" id="toKey1">
-            </form>
+        <form id="openTest" name="openTest">
+            请输入密码以开始课堂练习：<input type="text" id="yourKeyPOT" name="yourKeyPOT">
+            <button onclick="proveOpenTest()">确定</button>
         </form>
+        <div id="test">
+            <p>1.直接写出得数．</p>
+            <form>
+                \(2+(-5)=\)<input type="text" class="yourAnswer">
+                <br>
+                \((-3)+(-7)=\)<input type="text" class="yourAnswer">
+                <br>
+                \((-\cfrac{2}{3})-3=\)<input type="text" class="yourAnswer">
+                <br>
+                \((-0.5)-(-0.5)=\)<input type="text" class="yourAnswer">
+                <br>
+                \(3\times(-\cfrac{3}{7})=\)<input type="text" class="yourAnswer">
+                <br>
+                \((-\cfrac{2}{7})\div(-\cfrac{5}{4})=\)<input type="text" class="yourAnswer">
+                <br>
+                <button>提交</button>
+                <button onclick="showAnswer()">查看答案</button>
+                <form id="wantAnswer" name="wantAnswer">
+                    请输入查看答案的密码：<input type="text" id="yourKeyPSA" name="yourKeyPSA">
+                    <button onclick="proveShowAnswer()">确定</button>
+                </form>
+            </form>
+        </div>
 
     </body>
 </html>
