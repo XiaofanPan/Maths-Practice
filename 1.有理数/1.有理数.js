@@ -20,7 +20,16 @@ function proveOpenTest()
     {
         document.getElementById("test").style.display = "block";
         document.getElementById("buttonSA").style.display = "block";
-        xx = setTimeout(function(){u+=1},60000);
+        var xxx = document.getElementById("suspension");
+        xxx.style.display = "fixed";
+        xxx.style.bottom = "0px";
+        xxx.style.right = "0px";
+        while (xy < 6)
+        {
+            xx1 = setTimeout(function(){xxx.innerHTML = "过去了" + xy + "秒"},xy*1000);
+            xy ++;
+        }
+        xx2 = setTimeout(function(){u+=1;xxx.innerHTML = "时间到"},60000);
     }
 }
 function submit()
