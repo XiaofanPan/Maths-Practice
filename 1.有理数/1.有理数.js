@@ -41,33 +41,27 @@ function proveOpenTest()
         }
     }
 }
+function showYourAnswer()
+{
+    var d = new Date();
+    var hour = d.getHours();
+    var minute = d.getMinutes();
+    code = "编号：" + hour + minute + rnNum + u;
+    document.getElementById("1").innerHTML = document.forms["test"]["yourAnswer1"].value;
+    document.getElementById("2").innerHTML = document.forms["test"]["yourAnswer2"].value;
+    document.getElementById("3").innerHTML = document.forms["test"]["yourAnswer3"].value;
+    document.getElementById("4").innerHTML = document.forms["test"]["yourAnswer4"].value;
+    document.getElementById("5").innerHTML = document.forms["test"]["yourAnswer5"].value;
+    document.getElementById("6").innerHTML = document.forms["test"]["yourAnswer6"].value;
+    document.getElementById("code").innerHTML = code;
+}
 function submit()
 {
     if (maxtime < 0) {
-        var d = new Date();
-        var hour = d.getHours();
-        var minute = d.getMinutes();
-        code = "编号：" + hour + minute + rnNum + u;
-        document.getElementById("1").innerHTML = document.forms["test"]["yourAnswer1"].value;
-        document.getElementById("2").innerHTML = document.forms["test"]["yourAnswer2"].value;
-        document.getElementById("3").innerHTML = document.forms["test"]["yourAnswer3"].value;
-        document.getElementById("4").innerHTML = document.forms["test"]["yourAnswer4"].value;
-        document.getElementById("5").innerHTML = document.forms["test"]["yourAnswer5"].value;
-        document.getElementById("6").innerHTML = document.forms["test"]["yourAnswer6"].value;
-        document.getElementById("code").innerHTML = code;
+        showYourAnswer();
     } else {
         clearInterval(timer);
-        var d = new Date();
-        var hour = d.getHours();
-        var minute = d.getMinutes();
-        code = "编号：" + hour + minute + rnNum + u;
-        document.getElementById("1").innerHTML = document.forms["test"]["yourAnswer1"].value;
-        document.getElementById("2").innerHTML = document.forms["test"]["yourAnswer2"].value;
-        document.getElementById("3").innerHTML = document.forms["test"]["yourAnswer3"].value;
-        document.getElementById("4").innerHTML = document.forms["test"]["yourAnswer4"].value;
-        document.getElementById("5").innerHTML = document.forms["test"]["yourAnswer5"].value;
-        document.getElementById("6").innerHTML = document.forms["test"]["yourAnswer6"].value;
-        document.getElementById("code").innerHTML = code;
+        showYourAnswer();
     }
 }
 function showAnswer()
