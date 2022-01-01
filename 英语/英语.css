@@ -1,0 +1,11 @@
+.e {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    border: blue;
+}
+.w:hover .e {
+    display: block;
+}
